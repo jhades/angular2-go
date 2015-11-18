@@ -1,4 +1,4 @@
-import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component} from 'angular2/angular2';
 
 @Component({
   selector: 'my-dashboard',
@@ -8,8 +8,7 @@ import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
 		<input [(ng-model)]="name" />
 		<button (click)="sayHello()">Say Hello</button>
 		<p>{{message}}</p>
-	`,
-	directives: [FORM_DIRECTIVES]
+	`
 })
 export class DashboardComponent {
 	public name = 'john';
